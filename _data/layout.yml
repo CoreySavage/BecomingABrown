@@ -13,7 +13,7 @@ avatar: "travitar.jpg"
 accent: "#c99065"
 
 textColor: "#666"
-headlineColor: "#333"
+headlineColor: "rgba(96, 96, 96, 0.58)"
 bgcolor: "#e5eaee"
 documentBackgroundColor: "#fff"
 primary-color: "#606060"
