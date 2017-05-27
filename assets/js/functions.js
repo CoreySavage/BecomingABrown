@@ -15,7 +15,7 @@ function imageGallerySwitch() {
 		$('.img-select-container').css('left', '-100%');
 		for (i=1;i<=16;i++) {
 			if ($(this).attr("id") == "thumb-unit" + i) {
-			$('.img-container').css('backgroundImage', 'url("/assets/img/Tracey('+ i +').jpg")')
+			$('.img-container').css('backgroundImage', 'url("../img/Tracey('+ i +').jpg")')
 			}
 		}
 	});
