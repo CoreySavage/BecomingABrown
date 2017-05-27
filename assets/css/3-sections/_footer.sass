@@ -1,26 +1,21 @@
 footer
-  @extend %background-image
-  background-image: url(../img/#{$logo-path}), url(../img/#{$hero-path})
+  margin-top: 20px
+  background-image: url("../img/Tracey(footer).jpg")
+  background-size: cover
+  padding: 150px
 
-  .lockup
-    padding: 50px 30px
-    +clearfix
+  nav
+    text-align: center
+    margin: 0 auto
+    a
+      display: inline-block
+      margin-right: 20px
 
-    .content-wrap
-      float: left
-      margin-left: 80px
+      color: rgba(199, 131, 154, 0.9)
+      font:
+        size: 14px
+        weight: 700
 
-      .copyright
-        margin: 0
-        text-transform: uppercase
-        font-size: 12px
-        color: rgba(0,0,0,0.4)
-
-      a
-        @extend %small-bold
-        color: rgba(0,0,0,0.5)
-        display: inline-block
-        margin-right: 30px
-
-        &:hover
-          color: rgba(0,0,0,0.7)
+  .copyright
+    text-align: center
+    color: rgba(189, 189, 189, 0.75)
