@@ -1,16 +1,25 @@
-<section class="section-contact">
+<section class="photos-sec">
+  <h3 id="photos">Photos</h3>
 
-  <h3 id="contact">Contact</h3>
+  <div class="img-select-container">
 
+    <div class="thumb-wrap">
+      <div class="thumb-container">
+        {% for i in (1..16) %}
+        <a href="" onclick="return false" class="thumb-unit" id="thumb-unit{{ i }}">
+          <div class="thumb-overlay"></div>
+        </a>
+      {% endfor %}
+      </div>
+    </div> 
 
-  <div class="social-links">
-    {% for link in site.data.settings.social %}
-    <a href="{{ link.link }}" class="icon-{{ link.icon }}"></a>
-    {% endfor %}
+    <div class="img-wrap">
+      <div class="img-container">
+        <div class="img-back">{% include icons/icon-back.xml %}</div>      
+      </div>
+    </div>
+
   </div>
 
-  <hr class="bar">
-
-  <a class="biglink" href="mailto:{{ site.data.settings.email }}">{{ site.data.settings.email }}</a>
 
 </section>
