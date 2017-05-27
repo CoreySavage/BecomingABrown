@@ -65,12 +65,12 @@ function partyLoad() {
 			if ($(this).attr("id") == "bridesmaid" + i) {
 				var $this = $(this),
 					spinner = '<div class="loader">Loading...</div>',
-					newHTML = '/party-content/bridesmaid(' + i + ').html';
+					newHTML = 'party-content/bridesmaid(' + i + ').html';
 			}
 			if ($(this).attr("id") == "groomsmen" + i) {
 				var $this = $(this),
 					spinner = '<div class="loader">Loading...</div>',
-					newHTML = '/party-content/groomsmen(' + i + ').html';
+					newHTML = 'party-content/groomsmen(' + i + ').html';
 			}
 		}
 
