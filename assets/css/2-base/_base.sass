@@ -3,7 +3,7 @@
 
 .gigantic, .huge, .large, .bigger, .big,
 h1, h2, h3, h4, h5, h6
-  color: $primary-color
+  color: $headlineColor
   font-weight: bold
   text-align: center
 
@@ -13,7 +13,7 @@ h1, h2, h3, h4, h5, h6
   letter-spacing: -2px
 
 .huge, h1
-  font-size: 68px
+  font-size: 76px
   line-height: 1.05
   letter-spacing: -1px
 
@@ -98,6 +98,11 @@ body
 
 p
   text-align: center
+
+h1
+  @extend %script
+  margin-bottom: 20px
+  padding-top: 10px
 
 h3
   @extend %script
