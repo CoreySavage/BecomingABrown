@@ -9,7 +9,8 @@
   +transition(all 500ms)
 
 .details-wrap, .party-wrap, .kids-wrap
-  width: 33%
+  width: 33.33%
+  width: calc(100% / 3)
   float: left
 
 .details-container
@@ -107,24 +108,29 @@
     display: block
     margin: 0px auto
     max-width: 70%
+    max-height: 70%
 
   .party-text 
     padding: 20px
     text-align: center
-    font-size: 18px
+    font-size: 16px
     color: rgba(96, 96, 96, 0.58)
 
     @media screen and (max-width: 860px)
-      font-size: 16px
+      font-size: 14px
 
     @media screen and (max-width: 660px)
-      font-size: 14px
+      font-size: 12px
+
+    @media screen and (max-width: 415px)
+      font-size: 10px
 
   .party-back
     float: left
     cursor: pointer
     opacity: 0.7
     padding: 10px 3%
+    position: absolute
 
 
     &:hover
