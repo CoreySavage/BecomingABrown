@@ -32,7 +32,7 @@ function partyGallerySwitch() {
 		$('.party-select-container').css('left', '0%');
 		for (i=1;i<=4;i++) {
 			if ($(this).attr("id") == "kids-party-unit" + i) {
-				$('.kids-container').css('backgroundImage', 'url("/assets/img/kidsparty/kidsparty('+ i +').png")')
+				$('.kids-container').css('backgroundImage', 'url("../img/kidsparty/kidsparty('+ i +').png")')
 			}
 		}
 	});
