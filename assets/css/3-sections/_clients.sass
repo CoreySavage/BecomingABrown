@@ -1,156 +1,144 @@
-.section-clients
-  position: relative
-
-.clients-belt
+.photos-sec
+  overflow-x: hidden
   width: 100%
+
+.img-select-container
+  width: 200%
   position: relative
-
-  .client-unit
-    max-width: 750px
-    margin: 50px auto
-    position: relative
-    z-index: 1
-    display: none
-
-    &.active-client
-      +display(flex)
-      @extend %#{$animation}
-
-    .client-face
-      min-width: 180px
-      text-align: center
-
-      img
-        max-width: 100px
-        border-radius: 50%
+  left: 0%
+  +transition(all 500ms)
 
 
-      .client-name
-        display: block
-        text-transform: uppercase
-        font-weight: 400
-        letter-spacing: 1px
+.thumb-wrap, .img-wrap
+  width: 50%
+  float: left 
 
-      .client-title
-        font-style: normal
-        font-size: 12px
-        color: #999
-
-    .client-content
-      font-size: 18px
-      line-height: 36px
-      font-weight: 300
-      margin-top: -10px
-      position: relative
+.thumb-container
+  max-width: 960px
+  margin: 0px auto
+  padding-bottom: 100px
+  +clearfix()
 
 
-
-
-// Logos
-.clients-logos
-  position: relative
-  z-index: 3
-  max-width: 750px
-  margin: 0px auto 100px
-  +display(flex)
-  +align-items(flex-end)
-  +justify-content(space-around)
-
-
-  .client-logo
-    cursor: pointer
-    margin: 0 20px 20px
-    padding-bottom: 20px
-    border-bottom: 4px solid transparent
-    opacity: 0.5
-
-    &.active-client
-      opacity: 1
-      border-bottom: 4px solid $accent
-
-
-.client-quote-mark
-  +position(absolute, -18px null null -15px)
-  +size(60px)
-  z-index: -1
-  opacity: 0.3
-
-  path
-    fill: $accent
-
-
-
-// Controls
-.client-controls
-  +position(absolute, 0px 0px 0px 0px)
-  z-index: 2
-
-  > div
-    +size(40px)
-    margin-top: -20px
-    cursor: pointer
-
-    path
-      fill: $accent
-
-  .client-control-next
-    +position(absolute, 50% 10px null null)
-
-  .client-control-prev
-    +position(absolute, 50% null null 10px)
-
-// clients-mobile-nav
-.clients-mobile-nav
-  text-align: center
-  position: relative
-  z-index: 3
-  display: none
-
-  span
-    display: inline-block
-    +size(16px)
-    border-radius: 50%
-    border: solid 2px $bgcolor
-    margin: 0px 10px
-    cursor: pointer
-
-    &.active-client
-      border-color: $accent
-
-
-
-
-@media (max-width: 850px)
-  .clients-logos
-    +flex-wrap(wrap)
-
-  .clients-belt
-    overflow-x: hidden
-
-    .client-unit.active-client
-      display: block
-      position: relative
-      margin-left: auto
-      left: auto
-
-      .client-face
-        margin-bottom: 30px
-
-      .client-content
-        padding: 0px 30px
-        max-width: 400px
-        margin: 0px auto
-
-      .client-quote-mark
-        left: 6px
-
-  .clients-logos
-    display: none
-
-  .clients-mobile-nav
+  a
     display: block
+    width: 25%
+    float: left
+    position: relative
+    padding-top: 16%
+    overflow: hidden
+    background:
+      position: center center
+      repeat: no-repeat
+      size: cover
+  
+    @media screen and (max-width: 860px)
+      width: 33%
+      padding-top: 23%
+
+    @media screen and (max-width: 660px)
+      width: 50%
+      padding-top: 26%
 
 
-@media (max-width: 600px)
-  .client-controls
-    display: none
+    .thumb-overlay
+      +position(absolute, 100% 0px null 0px)
+      height: 100%
+      background: fade-out(#F8ECE1, .3)
+
+    &:hover .thumb-overlay
+      +position(absolute, 0% 0px null 0px)
+
+  #thumb-unit1
+    background:
+      image: url("/assets/img/thumbs/Tracey(1)thumb.jpg")
+      
+  #thumb-unit2
+    background:
+      image: url("/assets/img/thumbs/Tracey(2)thumb.jpg")
+
+  #thumb-unit3
+    background:
+      image: url("/assets/img/thumbs/Tracey(3)thumb.jpg")
+     
+  #thumb-unit4
+    background:
+      image: url("/assets/img/thumbs/Tracey(4)thumb.jpg")
+
+  #thumb-unit5
+    background:
+      image: url("/assets/img/thumbs/Tracey(5)thumb.jpg")
+ 
+  #thumb-unit6
+    background:
+      image: url("/assets/img/thumbs/Tracey(6)thumb.jpg")
+
+  #thumb-unit7
+    background:
+      image: url("/assets/img/thumbs/Tracey(7)thumb.jpg")
+ 
+  #thumb-unit8
+    background:
+      image: url("/assets/img/thumbs/Tracey(8)thumb.jpg")
+ 
+  #thumb-unit9
+    background:
+      image: url("/assets/img/thumbs/Tracey(9)thumb.jpg")
+ 
+  #thumb-unit10
+    background:
+      image: url("/assets/img/thumbs/Tracey(10)thumb.jpg")
+   
+  #thumb-unit11
+    background:
+      image: url("/assets/img/thumbs/Tracey(11)thumb.jpg")
+   
+  #thumb-unit12
+
+    background:
+      image: url("/assets/img/thumbs/Tracey(12)thumb.jpg")
+
+  #thumb-unit13
+    background:
+      image: url("/assets/img/thumbs/Tracey(13)thumb.jpg")
+     
+  #thumb-unit14
+    background:
+      image: url("/assets/img/thumbs/Tracey(14)thumb.jpg")
+
+  #thumb-unit15
+    background:
+      image: url("/assets/img/thumbs/Tracey(15)thumb.jpg")
+
+  #thumb-unit16
+    background:
+      image: url("/assets/img/thumbs/Tracey(16)thumb.jpg")
+
+.img-container
+  max-width: 960px
+  height: 615px
+  margin: 0px auto
+  background:
+    position: center top
+    repeat: no-repeat
+    size: contain
+
+  img
+    max-width: 100%
+
+  .img-back
+    cursor: pointer
+    opacity: 0.7
+    padding: 10px 3%
+
+
+    &:hover
+      opacity: 1
+
+
+
+
+
+
+
+  
