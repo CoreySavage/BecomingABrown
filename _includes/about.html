@@ -1,42 +1,35 @@
 <section>
 
-  <h3 id="about-me">About Myself</h3>
+  <h3 id="story">Our Story</h3>
 
-  <div class="face-lockup">
+  <div class="story-area">
 
-    <div class="face-img"></div>
+    <div class="story-img"></div>
 
-    <div class="icon-pencil">{% include icons/icon-pencil.html %}</div>
-    <div class="icon-mouse">{% include icons/icon-mouse.html %}</div>
-    <div class="icon-browser">{% include icons/icon-browser.html %}</div>
-    <div class="icon-video">{% include icons/icon-video.html %}</div>
+    <div class="story-words">
 
-  </div>
+      <p><strong>This couple?</strong> A story of love, a story of faith,<br />
+      and a story that merely writes itself.<br />
+      Dan and Tracey both had similar paths in life,<br />
+      that in the end,<br />
+      lead them to the same place.<br />
+      Wanting to give love one more chance,<br />
+      Dan and Tracey both looked to God for their answers,<br />
+      which is when the story of the rest of their lives began.<br />
+      Many of you know the theme of their wedding,<br />
+      Batman.<br />
+      Many of you ask, why?<br />
+      Tracey is a girly girl, who loves pink, yet, no pink at this wedding?<br />
+      Batman?<br />
+      Wedding day, you will hear the phenomenon behind this,<br />
+      and the reason she is marrying a real superhero,<br />
+      her superhero,<br />
+      Dan.<br />
+      </p>
+    </div>
 
-
-  <div class="blurb">
-    {{ site.data.settings.blurb | markdownify }}
-  </div>
-
-  {% if site.data.settings.skills %}
-
-  <div class="skill-lockup">
-
-    {% for skill in site.data.settings.skills %}
-
-      <div class="skill-unit">
-        <div class="skill-label">{{ skill.name }}</div>
-        <div class="skill-icons skill-{{ skill.value }}">
-          {% for i in (1..10) %}
-            <span></span>
-          {% endfor %}
-        </div>
-      </div>
-
-    {% endfor %}
 
   </div>
 
-  {% endif %}
 
 </section>
