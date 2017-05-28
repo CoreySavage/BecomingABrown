@@ -2,6 +2,12 @@
   overflow-x: hidden
   width: 100%
 
+#details
+  margin-bottom: 0px
+
+.date
+  padding-top: 0px
+
 .party-select-container
   width: 300%
   position: relative
@@ -13,11 +19,20 @@
   width: calc(100% / 3)
   float: left
 
+.location
+  font-size: 18px
+  margin: 15px 0
+  display: inline-block
+
+#church
+  max-width: 170px
+
+
 .details-container
   max-width: 960px
   margin: 0px auto
   +clearfix()
-  background-color: $bgcolor
+  background-color: lighten($accent, 33%)
 
   .location-area
     max-width: 960px
@@ -26,8 +41,9 @@
 
     .time-h
       display: inline
+      color: $accent
 
-    .cerimony
+    .ceremony
       display: block
       width: 50%
       float: left
@@ -56,11 +72,17 @@
         text-align: center
         padding-right: 50px
 
+        @media screen and (max-width: 340px)
+          padding-right: 25px
+
       .flower
         margin-top: 0
         float: left
         text-align: center
         padding-left: 50px
+
+        @media screen and (max-width: 340px)
+          padding-left: 25px
 
     .wedding-party-wrap
       +display(flex)
@@ -74,27 +96,28 @@
         float: left
         text-align: center
 
+        @media screen and (max-width: 500px)
+          width: 100%
+
       .brides
         width: 50%
         float: left
         text-align: center
 
-@media screen and (max-width: 860px)
+
+        @media screen and (max-width: 500px)
+          width: 100%
+          margin-top: 20px
+
+
+@media screen and (max-width: 660px)
   .details-container
     .location-area
-      .cerimony
+      .ceremony
         width: 100%
       .reception
         width: 100%
 
-@media screen and (max-width: 660px)
-  .details-container
-    .wedding-party
-      .party-wrap
-        .grooms
-          width: 100%
-        .brides
-          width: 100%
 
 
 .party-container

@@ -28,4 +28,8 @@ Temporary Items
 _site/
 
 ### Sass ###
+<<<<<<< Updated upstream
 .sass-cache
+=======
+.sass-cache
+>>>>>>> Stashed changes

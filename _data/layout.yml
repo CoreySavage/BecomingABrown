@@ -10,6 +10,8 @@ avatar: "travitar.jpg"
 
 # Colors
 
+linkColor: "#4577C7"
+
 accent: "#c99065"
 
 textColor: "#666"

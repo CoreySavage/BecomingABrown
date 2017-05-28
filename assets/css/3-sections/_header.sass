@@ -6,15 +6,40 @@
   background-position: left top
   background-size: cover
 
+  @media screen and (max-height: 780px)
+    height: 100vh 
+
   .title
 
     @media screen and (max-width: 790px)
       padding-top: 0px
       margin-top: 20px
 
-    @media screen and (max-width: 485px)
+    @media screen and (max-width: 510px)
       padding-top: 0px
-      margin-top: 0px
+      margin-top: 10px
+      font-size: 72px
+      margin-bottom: 10px
+
+    @media screen and (max-width: 435px)
+      padding-top: 0px
+      margin-top: 10px
+      font-size: 68px
+
+    @media screen and (max-width: 400px)
+      padding-top: 0px
+      margin-top: 5px
+      font-size: 64px
+
+    @media screen and (max-width: 375px)
+      padding-top: 0px
+      margin-top: 5px
+      font-size: 58px
+
+    @media screen and (max-width: 340px)
+      padding-top: 0px
+      margin-top: 5px
+      font-size: 54px
 
     span
       display: inline-block
@@ -36,15 +61,38 @@
 
 
 
-nav
-
+.nav-wrap-head
+  margin: auto
+  position: relative
+  +display(flex)
+  flex-wrap: wrap
+  width: 480px
+  align-content: space-around
   text-align: center
-  line-height: 1px
-  a
-    display: inline-block
-    margin-left: 20px
+  justify-content: space-between
+
+  @media screen and (max-width: 510px)
+    width: 420px
+
+  @media screen and (max-width: 485px)
+    width: 390px
+
+  @media screen and (max-width: 400px)
+    width: 310px
+
+
+
+  .nav-link-head
+    float: left
+    padding-bottom: 5px
 
     color: rgba(0,0,0,0.45)
     font:
       size: 14px
       weight: 700
+
+    @media screen and (max-width: 435px)
+      flex-basis: 50%
+
+
+
