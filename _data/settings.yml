@@ -2,17 +2,15 @@
 # General Site Settings
 
 title: Becoming a Brown
-email: devtipsfordesigners@gmail.com
+email: mastasav@gmail.com
 
 #-------------------------------
 # SEO Section
 
-# NOTE: Providing SEO information will make this website more searchable on the internet.
 
 seo:
-  description: 'Dan Brown and Tracey Sbrocca '
-  rel-author: 'https://plus.google.com/u/0/+DevTipsForDesigners/'
-  rel-publisher: 'https://plus.google.com/u/0/+DevTipsForDesigners/'
+  description: 'Holy Matrimony, Batman! Dan Brown and Tracey Sbrocca are getting married on November 11th! Join Dan and Tracey in celebrating their marriage and future.'
+
 
 #-------------------------------
 # Google Analytics Section
