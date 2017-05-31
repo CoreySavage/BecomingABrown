@@ -3,8 +3,8 @@
 
 .gigantic, .huge, .large, .bigger, .big,
 h1, h2, h3, h4, h5, h6
-  color: $headlineColor
   font-weight: bold
+  text-align: center
 
 .gigantic
   font-size: 110px
@@ -12,21 +12,25 @@ h1, h2, h3, h4, h5, h6
   letter-spacing: -2px
 
 .huge, h1
-  font-size: 68px
+  font-size: 76px
   line-height: 1.05
   letter-spacing: -1px
 
 .large, h2
-  font-size: 42px
+  font-size: 46px
   line-height: 1.14
 
 .bigger, h3
-  font-size: 26px
-  line-height: 1.38
+  font-size: 36px
+  line-height: 1.28
 
 .big, h4
-  font-size: 22px
-  line-height: 1.38
+  font-size: 24px
+  line-height: 1.18
+
+.medium, h5
+  font-size: 20px
+  line-height: 1
 
 .small, small
   font-size: 10px
@@ -55,8 +59,10 @@ hr
 /* Links
   ------------------------------------	*/
 a
-  color: $accent
+  color: $linkColor
+  cursor: pointer
   text-decoration: none
+  font-weight: 500
   outline: 0
 
 a:hover, a:focus
@@ -95,27 +101,39 @@ body
   -webkit-font-smoothing: antialiased
   -webkit-text-size-adjust: 100%
 
-svg
-  +size(100%)
+p
+  text-align: center
+
+h1
+  color: $headlineColor
+  @extend %script
+  margin-bottom: 20px
+  padding-top: 10px
+
+h2
+  @extend %script
+  color: $headlineColor
+  padding: 8px 0 0
 
 h3
-  @extend %small-bold
-  color: $accent-light
-  text-align: center
-  padding: 100px 0 30px
+  @extend %script
+  color: $accent
+  padding-top: 20px
+  margin: 0
+
+h4
+  color: $accent
+  margin-top: 10px
+  margin-bottom: 0
+
+h5
+  color: darken($headlineColor, 30%)
+  margin: 10px auto
+  font-weight: 500
+
 
 fieldset
   padding: 0
   margin: 0
   border: none
 
-@media screen and (max-width: 480px)
-  h3
-    padding: 50px 0 50px
-
-section:nth-child(odd)
-  background: $bgcolor
-  padding-bottom: 100px
-
-  h3
-    color: darken($accent-light, 10%)
